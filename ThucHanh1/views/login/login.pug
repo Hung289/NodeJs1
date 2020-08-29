@@ -1,0 +1,136 @@
+extends ../layouts/common.pug
+
+block content 
+	//- h1 login
+
+	//- if errors
+	//- 	each error in errors
+	//- 		.alert.alert-danger=error
+
+	//- form(action="/login/login" method="POST")
+	//- 	.form-group
+	//- 		label(for="email") Email
+	//- 		input#name.form-control(name="email" type="text", value=values ? values.email : '')
+
+	//- 	.form-group
+	//- 		label(for="password") Password
+	//- 		input#phone.form-control(name="password" type="text", value=values ? values.password : '')
+
+	//- 	button.btn.btn-primary Login
+	header.mot
+		.container1
+			.row
+				.left
+					p facebook
+				.right
+					form(action='/login/loggin' method="POST")
+						table
+							thead
+								tr
+									td Email ho&#x1EB7;c s&#x1ED1; &dstrok;i&#x1EC7;n tdo&#x1EA1;i
+									td M&#x1EAD;t Kh&#x1EA9;u
+									td
+							tbody
+								tr
+									td
+										input(type='email' name='email' value='' placeholder='')
+									td
+										input(type='password' name='password' value='' placeholder='')
+									td
+										input(type='submit' name='' value='Đăng nhập')
+								tr
+									td
+									td
+										a(href='') Qu&ecirc;n m&#x1EAD;t kh&#x1EA9;u?
+									td
+	main
+		.container
+			.khoichuato
+				.left
+					p.textto &Dstrok;&abreve;ng nh&#x1EAD;p g&#x1EA7;n &dstrok;&acirc;y
+					p.textnho Nh&#x1EA5;p v&agrave;o &#x1EA3;nh c&#x1EE7;a b&#x1EA1;n ho&#x1EB7;c th&ecirc;m t&agrave;i kho&#x1EA3;n m&#x1EDB;i
+					//- .khoitaikhoan
+					//- 	._khoi_tk
+					//- 		a(href='')
+					//- 			.khoianh
+					//- 				img(src='img/screenshot_1595911228.png' alt='')
+					//- 				.chuduoianh
+					//- 					| Nguy&#x1EC5;n
+					//- 	._khoi_tk
+					//- 		a(href='')
+					//- 			.khoianh
+					//- 				img(src='img/screenshot_1595911228.png' alt='')
+					//- 				.chuduoianh
+					//- 					| Nguy&#x1EC5;n
+					//- 	._khoi_tk
+					//- 		a(href='')
+					//- 			.khoianh
+					//- 				img(src='img/screenshot_1595911228.png' alt='')
+					//- 				.chuduoianh
+					//- 					| Nguy&#x1EC5;n
+				.right
+					p.textto T&#x1EA1;o t&agrave;i kho&#x1EA3;n m&#x1EDB;i
+					p.textnho Nhanh ch&oacute;ng d&#x1EC5; d&agrave;ng
+					form(action='')
+						.full_name.chung
+							.ho
+								input(type='text' placeholder='Họ ...')
+							.ten
+								input(type='text' placeholder='Tên ...')
+						.phone_email.chung
+							input(type='text' placeholder='Nhập phone hoặc email...')
+						.new_password.chung
+							input(type='text' placeholder='Nhập password mới...')
+						.birth_day.chung
+							.ngaysinh Ng&agrave;y sinh
+							select(name='' id='')
+								option(value='') 1
+								option(value='') 2
+								option(value='') 3
+								option(value='') 4
+								option(value='') 5
+								option(value='') 6
+								option(value='') 7
+								option(value='') 8
+								option(value='') 9
+								option(value='') 10
+							select(name='' id='')
+								option(value='') Th&aacute;ng 1
+								option(value='') Th&aacute;ng 2
+								option(value='') Th&aacute;ng 3
+								option(value='') Th&aacute;ng 4
+								option(value='') Th&aacute;ng 5
+								option(value='') Th&aacute;ng 6
+								option(value='') Th&aacute;ng 7
+								option(value='') Th&aacute;ng 8
+								option(value='') Th&aacute;ng 9
+								option(value='') Th&aacute;ng 10
+								option(value='') Th&aacute;ng 11
+								option(value='') Th&aacute;ng 12
+							select(name='' id='')
+								option(value='') 1996
+								option(value='') 1997
+								option(value='') 1998
+								option(value='') 1999
+								option(value='') 2000
+								option(value='') 2001
+								option(value='') 2002
+								option(value='') 2003
+								option(value='') 2004
+								option(value='') 2005
+						.gender.chung
+							.gioitinh Gi&#x1EDB;i t&iacute;nh
+							span
+								input(type='radio' name='gender')
+								label(for='') N&#x1EEF;
+							span
+								input(type='radio' name='gender')
+								label(for='') Nam
+							span
+								input(type='radio' name='gender')
+								label(for='') T&ugrave;y ch&#x1EC9;nh
+						.text_dk
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat aut harum nulla asperiores eveniet magnam fugit repellat praesentium quia amet iusto quis incidunt, atque unde, culpa nobis ratione odit consequuntur!
+						.dangky
+							input(type='submit' value='Đăng Ký')
